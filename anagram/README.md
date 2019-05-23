@@ -1,6 +1,6 @@
 # anagram_checker
 anagram checker with mocha test case.
 
-clone the repo. 
+download the folder. Inside the folder...
 run-> 'npm install'. 
 run-> 'npm run test'.
