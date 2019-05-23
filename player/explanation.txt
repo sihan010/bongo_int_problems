@@ -1,0 +1,19 @@
+I will propose to have a Media interface which will contain the definitions for three methods 
+play, forward and rewind. MediaPlayer class will implement the interface and complete those methods. 
+
+MediaPlayer class will contain lots of variables to keep track of its states, for example - 
+mediaLength, currentTime, isPlaying etc. When MediaPlayer class is initiated it'll take a 
+video/audio path and initialize its variables.
+
+play method will render frames to the screen according to currentTime while checking mediaLength. 
+It will also increment currentTime while playing. Depending on isPlaying variable play method 
+can play or pause media files. 
+
+forward method will increment currentTime by 10 if currentTime+10 is less than mediaLength and 
+play/pause according to isPlaying.
+
+rewind method will decrement currentTime by 10 if currentTime-10 is larger than 0 and play/pause 
+according to isPlaying.
+
+Code Demo can be found at MediaPlayer.java
+Comments are added to explain functionalities.

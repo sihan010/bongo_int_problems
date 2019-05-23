@@ -1,0 +1,37 @@
+1. Given structure: 
+
+interface Vehicle{
+
+	int set_num_of_wheels();
+
+	int set_num_of_passengers();
+
+	boolean has_gas();
+
+}
+
+
+
+Comments on given interface - setter method should have ability to receive argument, which will be set to a specific variable later on.
+
+
+
+a) Since we are given an interface Vehicle, our Car and Plane classes will have to implement the interface. Which means, inside Car and Plane class we have
+
+to define the body of set_num_of_wheels, set_num_of_passengers and has_gas methods. Each class will have 3 variables to store wheel, passenger and gas values.
+
+code is in Abstraction.java
+
+
+
+b) Besides interfaces we can use abstract classes. Abstract class will contain 3 variables to store wheel, passenger and gas values. 3 abstract methods 
+
+set_num_of_wheels, set_num_of_passengers and has_gas methods which will be implemented by the inheriting classes. Car and Plane classes will inherit from 
+
+Vehicle class and will have access to their own sets of variables and concrete methods. In Car and Plane class we will implement Vehicle class's abstract
+
+methods to set or get the variables. I also added a concrete method result_string() to get a formatted result in Vehicle class, which will also be available 
+
+to Car and Plane classes by inheriting the Vehicle class.
+
+code is in Abstraction_proposed.java
